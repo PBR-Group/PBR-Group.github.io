@@ -1,0 +1,30 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if page.title == "Home" %}
+    <meta name="description" content="{{ site.description }}">
+  {% endif %}
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Shop Homepage - Start Bootstrap Template</title>
+
+  <link href="{{ "/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/assets/css/shop-homepage.css"  | relative_url }}">
+
+  {% feed_meta %}
+</head>
