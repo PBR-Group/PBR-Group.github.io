@@ -15,10 +15,10 @@
     <div class="card h-100">
         <a href="{{ post.project_url }}"><img class="card-img-top" src="{{ "/assets/images/"+| relative_url }}{{ post.poster_name }} " alt=""></a>
         <div class="card-body">
-            <h4 class="card-title">
+            <h4 class="card-title" style="text-align: center">
                 <a href="#">{{ post.title }}</a>
             </h4>
-            <p class="card-text">{{ post.description }}</p>
+            <p class="card-text" style="text-align: justify">{{ post.description }}</p>
         </div>
 
     </div>
